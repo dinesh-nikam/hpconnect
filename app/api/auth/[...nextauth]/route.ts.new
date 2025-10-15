@@ -1,0 +1,16 @@
+import NextAuth from "next-auth";
+import { authOptions } from "../auth-config";
+import type { NextAuthRequest } from "next-auth/lib";
+
+const auth = NextAuth(authOptions);
+
+export async function GET(req: NextAuthRequest) {
+  return auth(req);
+}
+
+export async function POST(req: NextAuthRequest) {
+  return auth(req);
+}
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
