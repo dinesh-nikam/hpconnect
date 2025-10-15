@@ -97,7 +97,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         
         visitedDate = new Date().toISOString().slice(0, 10);
       }
-    // Verify SMTsending email
+    // Verif\l
     try {
       console.log('[Email] Starting email send process...');
       console.log('[Email] SMTP Configuration:', {
